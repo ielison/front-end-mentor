@@ -1,0 +1,84 @@
+/* font-family: 'Lexend Deca', sans-serif;
+font-family: 'Big Shoulders Display', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 20px;
+}
+
+a {
+  background-color: hsl(0, 0%, 95%);
+  color: teal;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.card-car {
+  padding: 30px;
+}
+
+.card-sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-sedan a {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-suv a {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.card-luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /*   align-items: center;
+
+  align-items: stretch; */
+  margin: 50px 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 720px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
+
+@media print {
+  .card-container {
+    flex-direction: row;
+  }
+  .card-car {
+    border: 3px solid black;
+  }
+}
